@@ -1,12 +1,38 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main() {
- float marks[] = {78.4, 90.6, 45.9, 72.2, 54.4};
- char names[][20] = {"Ajith", "Wimal", "Kanthi", "Suranji", "Kushmitha"};
- cout << "No" << "Name" << "Marks" << endl;
- for (int r = 0; r < 5; r++) {
-     cout <<  r+1 
-          <<  names[r]
-          << marks[r] << endl;
- }
+void print(int len,int wth);
+void input (int& length,int & width);
+int main()
+{
+   int length=10,width=5;
+
+   input(length,width);
+   print(length,width);
+   return 0;
+}
+void print(int len,int wth)
+{
+  cout<<"Length:"<<len
+  <<",Width:"<<wth<<endl;
+}
+void input(int& length,int& width)
+{
+  cout<<"Enter the length:";
+  cin>>length;
+  cout<<"Enter the width:";
+  cin>>width;
+}
+
+
+   
+  
+
+
+
+
+
+
+
+
+  
 }
