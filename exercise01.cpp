@@ -1,27 +1,23 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
-void print(int len,int wth);
-void input (int& length,int & width);
 int main()
-{
-   int length=10,width=5;
+  {
+     float marks ={78.4,90.6,45.9,72.2,54.4};
+     char names[20]={"Ajith","Wimal","Kanthi","Kushmitha"};
+     cout<<setw(5)<<"No"setw(15)<<"Name"<<setw(10)<<"Marks"           <<endl;
 
-   input(length,width);
-   print(length,width);
-   return 0;
-}
-void print(int len,int wth)
-{
-  cout<<"Length:"<<len
-  <<",Width:"<<wth<<endl;
-}
-void input(int& length,int& width)
-{
-  cout<<"Enter the length:";
-  cin>>length;
-  cout<<"Enter the width:";
-  cin>>width;
-}
+    (for int r=0;r<5;r++)
+    {
+      cout<<setw(5)<<r+1
+          <<setw(15)<<names[r]
+          <<setw(10)<<setiosflags(ios::fixed)<<setprecision(2)<<mark[r]<<endl;
+    }
+
+
+    
+  }
+
 
 
    
@@ -35,4 +31,3 @@ void input(int& length,int& width)
 
 
   
-}
